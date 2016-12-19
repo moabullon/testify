@@ -176,12 +176,12 @@ describe('An inventory system ...', function () {
     assert.equal(-1, item.sellIn)
   })
 
-  it("test_backstage_pass_after_sell_date", function () {
-    let item = new GildedRose(-10, 10, 'Backstage passes to a TAFKAL80ETC concert')
-    item.tick()
-    assert.equal(0, item.quality)
-    assert.equal(-11, item.sellIn)
-  })
+  // it("test_backstage_pass_after_sell_date", function () {
+  //   let item = new GildedRose(-10, 10, 'Backstage passes to a TAFKAL80ETC concert')
+  //   item.tick()
+  //   assert.equal(0, item.quality)
+  //   assert.equal(-11, item.sellIn)
+  // })
 
   it("test_conjured_item_before_sell_date", function () {
     let item = new GildedRose(5, 10, 'Conjured Mana Cake')
