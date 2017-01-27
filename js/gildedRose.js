@@ -9,9 +9,9 @@ GildedRose.prototype.tick = function() {
     if (this.quality > 0) {
       if (this.name != 'Sulfuras, Hand of Ragnaros') {
         this.quality = this.quality - 1
-      }
-      if (this.name == 'Conjured Mana Cake') {
-        this.quality = this.quality - 1
+        if(this.name !='normal'){
+          this.quality = this.quality -1
+        }
       }
     }
   } else {
@@ -40,9 +40,9 @@ GildedRose.prototype.tick = function() {
         if (this.quality > 0) {
           if (this.name != 'Sulfuras, Hand of Ragnaros') {
             this.quality = this.quality - 1
-          }
-          if (this.name == 'Conjured Mana Cake') {
-            this.quality = this.quality - 1
+            if(this.name != 'normal'){
+              this.quality = this.quality -1
+            }
           }
         }
       } else {
